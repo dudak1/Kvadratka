@@ -1,0 +1,130 @@
+\doxysection{prototypes.\+h File Reference}
+\hypertarget{prototypes_8h}{}\label{prototypes_8h}\index{prototypes.h@{prototypes.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{prototypes_8h_a479790572f6ff992d9d1bc1a1621976a}{Sort\+Roots}} (double unsorted\+\_\+x1, double unsorted\+\_\+x2, double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
+\item 
+int \mbox{\hyperlink{prototypes_8h_a03ed2c108b3ef2a57824ecf567906bd8}{solver}} (struct \mbox{\hyperlink{structcoefficients}{coefficients}} coeffs, double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
+\item 
+void \mbox{\hyperlink{prototypes_8h_a8266c73dfcd65019dae3e05058ec9da6}{Modded\+Print}} (std\+::string text, int color)
+\item 
+int \mbox{\hyperlink{prototypes_8h_a5d123b36110701ab2d3e349f50d1daab}{Test\+ALL}} ()
+\item 
+int \mbox{\hyperlink{prototypes_8h_ae24b55ce52a3e44ced9d5a20205c6b25}{Test\+One}} (const struct \mbox{\hyperlink{struct_test_data}{Test\+Data}} \texorpdfstring{$\ast$}{*}data)
+\item 
+void \mbox{\hyperlink{prototypes_8h_a3c5379fbf399d09c0781f3e9d097d9fd}{Print\+Roots}} (int n\+Roots, double x1, double x2)
+\item 
+void \mbox{\hyperlink{prototypes_8h_a42e25f01f1bc6a25c20902bca53f8396}{Enter\+Coeffs}} (struct \mbox{\hyperlink{structcoefficients}{coefficients}} \texorpdfstring{$\ast$}{*}coeffs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{prototypes_8h_a42e25f01f1bc6a25c20902bca53f8396}\label{prototypes_8h_a42e25f01f1bc6a25c20902bca53f8396} 
+\index{prototypes.h@{prototypes.h}!EnterCoeffs@{EnterCoeffs}}
+\index{EnterCoeffs@{EnterCoeffs}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{EnterCoeffs()}{EnterCoeffs()}}
+{\footnotesize\ttfamily void Enter\+Coeffs (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structcoefficients}{coefficients}} \texorpdfstring{$\ast$}{*}}]{coeffs }\end{DoxyParamCaption})}
+
+Gets coefficients of square equation
+
+
+\begin{DoxyParams}{Parameters}
+{\em coeffs} & Struct, in which coefficients will be sign up\\
+\hline
+\end{DoxyParams}
+Using scanf \Hypertarget{prototypes_8h_a8266c73dfcd65019dae3e05058ec9da6}\label{prototypes_8h_a8266c73dfcd65019dae3e05058ec9da6} 
+\index{prototypes.h@{prototypes.h}!ModdedPrint@{ModdedPrint}}
+\index{ModdedPrint@{ModdedPrint}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{ModdedPrint()}{ModdedPrint()}}
+{\footnotesize\ttfamily void Modded\+Print (\begin{DoxyParamCaption}\item[{std\+::string}]{text,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+Print colored text
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Printable text \\
+\hline
+{\em color} & Color of text \\
+\hline
+\end{DoxyParams}
+\Hypertarget{prototypes_8h_a3c5379fbf399d09c0781f3e9d097d9fd}\label{prototypes_8h_a3c5379fbf399d09c0781f3e9d097d9fd} 
+\index{prototypes.h@{prototypes.h}!PrintRoots@{PrintRoots}}
+\index{PrintRoots@{PrintRoots}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{PrintRoots()}{PrintRoots()}}
+{\footnotesize\ttfamily void Print\+Roots (\begin{DoxyParamCaption}\item[{int}]{n\+Roots,  }\item[{double}]{x1,  }\item[{double}]{x2 }\end{DoxyParamCaption})}
+
+Prints roots
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Roots} & Quantity of roots \\
+\hline
+{\em x1} & First root \\
+\hline
+{\em x2} & Second root \\
+\hline
+\end{DoxyParams}
+\Hypertarget{prototypes_8h_a03ed2c108b3ef2a57824ecf567906bd8}\label{prototypes_8h_a03ed2c108b3ef2a57824ecf567906bd8} 
+\index{prototypes.h@{prototypes.h}!solver@{solver}}
+\index{solver@{solver}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{solver()}{solver()}}
+{\footnotesize\ttfamily int solver (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structcoefficients}{coefficients}}}]{coeffs,  }\item[{double \texorpdfstring{$\ast$}{*}}]{x1,  }\item[{double \texorpdfstring{$\ast$}{*}}]{x2 }\end{DoxyParamCaption})}
+
+Solves a square equation ax\texorpdfstring{$^\wedge$}{\string^}2+bx+c=0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em coeffs} & a, b, c coefficients \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & Pointer to the less root \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & Pointer to the bigger root\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantity of roots
+\end{DoxyReturn}
+In case of infinite quantity of roots, returns infinity \Hypertarget{prototypes_8h_a479790572f6ff992d9d1bc1a1621976a}\label{prototypes_8h_a479790572f6ff992d9d1bc1a1621976a} 
+\index{prototypes.h@{prototypes.h}!SortRoots@{SortRoots}}
+\index{SortRoots@{SortRoots}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{SortRoots()}{SortRoots()}}
+{\footnotesize\ttfamily void Sort\+Roots (\begin{DoxyParamCaption}\item[{double}]{unsorted\+\_\+x1,  }\item[{double}]{unsorted\+\_\+x2,  }\item[{double \texorpdfstring{$\ast$}{*}}]{x1,  }\item[{double \texorpdfstring{$\ast$}{*}}]{x2 }\end{DoxyParamCaption})}
+
+Sortes roots of quadratic equation
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsorted\+\_\+x1} & First root \\
+\hline
+{\em unsorted\+\_\+x2} & Second root \\
+\hline
+{\em x1} & Pointer to the less root \\
+\hline
+{\em x2} & Pointer to the bigger root\\
+\hline
+\end{DoxyParams}
+After working x1 consists less root, x2 bigger root \Hypertarget{prototypes_8h_a5d123b36110701ab2d3e349f50d1daab}\label{prototypes_8h_a5d123b36110701ab2d3e349f50d1daab} 
+\index{prototypes.h@{prototypes.h}!TestALL@{TestALL}}
+\index{TestALL@{TestALL}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{TestALL()}{TestALL()}}
+{\footnotesize\ttfamily int Test\+ALL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{prototypes_8h_ae24b55ce52a3e44ced9d5a20205c6b25}\label{prototypes_8h_ae24b55ce52a3e44ced9d5a20205c6b25} 
+\index{prototypes.h@{prototypes.h}!TestOne@{TestOne}}
+\index{TestOne@{TestOne}!prototypes.h@{prototypes.h}}
+\doxysubsubsection{\texorpdfstring{TestOne()}{TestOne()}}
+{\footnotesize\ttfamily int Test\+One (\begin{DoxyParamCaption}\item[{const struct \mbox{\hyperlink{struct_test_data}{Test\+Data}} \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+
+Tests correct work of solver
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data or type struct \doxylink{struct_test_data}{Test\+Data}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if test failed, else 1
+\end{DoxyReturn}
+After working print information to console 
