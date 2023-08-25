@@ -1,6 +1,6 @@
 #include "prototypes.h"
 #include "consts.h"
-#include <format>
+#include <iostream>
 
 /**
 *      Tests correct work of solver
@@ -15,16 +15,22 @@ int TestOne(const struct TestData* data) {
     double x1 = 0, x2 = 0;
     int nRoots = solver({ data->a, data->b, data->c }, &x1, &x2);
     if (x1 != data->x1 || x2 != data->x2 || nRoots != data->nRoots) {
-        ModdedPrint(std::format("Failed: x1={}, x2={}, nRoots={}, expected x1Ref={}, x2Ref={}, nRootsRef={}\n",
-            x1, x2, nRoots, data->x1, data->x2, data->nRoots), 12);
+        printf("Failed: x1=%lf, x2=%lf, nRoots=%lf expected x1Ref=%lf, x2Ref=%lf, nRootsRef=%lf\n",
+            x1, x2, nRoots, data->x1, data->x2, data->nRoots);
         return 0;
     }
     else {
-        ModdedPrint("Test OK\n", 10);
+        printf("Test OK\n");
         return 1;
     }
 }
 
+/**
+*      Starts all tests of solver
+*
+*      @return quantity of completed tests
+*
+*/
 int TestALL() {
     int nOk = 0;
     const int nTests = 3;

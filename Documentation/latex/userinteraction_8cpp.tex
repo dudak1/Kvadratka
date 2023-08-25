@@ -1,10 +1,15 @@
 \doxysection{userinteraction.\+cpp File Reference}
 \hypertarget{userinteraction_8cpp}{}\label{userinteraction_8cpp}\index{userinteraction.cpp@{userinteraction.cpp}}
 {\ttfamily \#include \"{}prototypes.\+h\"{}}\newline
-{\ttfamily \#include $<$format$>$}\newline
 {\ttfamily \#include \"{}consts.\+h\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{userinteraction_8cpp_abfbde71664b7760e6d5e294274efd22c}{get\+\_\+num}} ()
 \item 
 void \mbox{\hyperlink{userinteraction_8cpp_a3c5379fbf399d09c0781f3e9d097d9fd}{Print\+Roots}} (int n\+Roots, double x1, double x2)
 \item 
@@ -26,7 +31,18 @@ Gets coefficients of square equation
 {\em coeffs} & Struct, in which coefficients will be sign up\\
 \hline
 \end{DoxyParams}
-Using scanf \Hypertarget{userinteraction_8cpp_a3c5379fbf399d09c0781f3e9d097d9fd}\label{userinteraction_8cpp_a3c5379fbf399d09c0781f3e9d097d9fd} 
+Using scanf \Hypertarget{userinteraction_8cpp_abfbde71664b7760e6d5e294274efd22c}\label{userinteraction_8cpp_abfbde71664b7760e6d5e294274efd22c} 
+\index{userinteraction.cpp@{userinteraction.cpp}!get\_num@{get\_num}}
+\index{get\_num@{get\_num}!userinteraction.cpp@{userinteraction.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_num()}{get\_num()}}
+{\footnotesize\ttfamily int get\+\_\+num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get correct number from console
+
+\begin{DoxyReturn}{Returns}
+Gotten number
+\end{DoxyReturn}
+In case of uncorrect enter, print about this and do recursion, while dont return number \Hypertarget{userinteraction_8cpp_a3c5379fbf399d09c0781f3e9d097d9fd}\label{userinteraction_8cpp_a3c5379fbf399d09c0781f3e9d097d9fd} 
 \index{userinteraction.cpp@{userinteraction.cpp}!PrintRoots@{PrintRoots}}
 \index{PrintRoots@{PrintRoots}!userinteraction.cpp@{userinteraction.cpp}}
 \doxysubsubsection{\texorpdfstring{PrintRoots()}{PrintRoots()}}

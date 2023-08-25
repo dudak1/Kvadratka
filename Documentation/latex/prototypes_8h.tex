@@ -8,8 +8,6 @@ void \mbox{\hyperlink{prototypes_8h_a479790572f6ff992d9d1bc1a1621976a}{Sort\+Roo
 \item 
 int \mbox{\hyperlink{prototypes_8h_a03ed2c108b3ef2a57824ecf567906bd8}{solver}} (struct \mbox{\hyperlink{structcoefficients}{coefficients}} coeffs, double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
 \item 
-void \mbox{\hyperlink{prototypes_8h_a8266c73dfcd65019dae3e05058ec9da6}{Modded\+Print}} (std\+::string text, int color)
-\item 
 int \mbox{\hyperlink{prototypes_8h_a5d123b36110701ab2d3e349f50d1daab}{Test\+ALL}} ()
 \item 
 int \mbox{\hyperlink{prototypes_8h_ae24b55ce52a3e44ced9d5a20205c6b25}{Test\+One}} (const struct \mbox{\hyperlink{struct_test_data}{Test\+Data}} \texorpdfstring{$\ast$}{*}data)
@@ -34,22 +32,7 @@ Gets coefficients of square equation
 {\em coeffs} & Struct, in which coefficients will be sign up\\
 \hline
 \end{DoxyParams}
-Using scanf \Hypertarget{prototypes_8h_a8266c73dfcd65019dae3e05058ec9da6}\label{prototypes_8h_a8266c73dfcd65019dae3e05058ec9da6} 
-\index{prototypes.h@{prototypes.h}!ModdedPrint@{ModdedPrint}}
-\index{ModdedPrint@{ModdedPrint}!prototypes.h@{prototypes.h}}
-\doxysubsubsection{\texorpdfstring{ModdedPrint()}{ModdedPrint()}}
-{\footnotesize\ttfamily void Modded\+Print (\begin{DoxyParamCaption}\item[{std\+::string}]{text,  }\item[{int}]{color }\end{DoxyParamCaption})}
-
-Print colored text
-
-
-\begin{DoxyParams}{Parameters}
-{\em text} & Printable text \\
-\hline
-{\em color} & Color of text \\
-\hline
-\end{DoxyParams}
-\Hypertarget{prototypes_8h_a3c5379fbf399d09c0781f3e9d097d9fd}\label{prototypes_8h_a3c5379fbf399d09c0781f3e9d097d9fd} 
+Using scanf \Hypertarget{prototypes_8h_a3c5379fbf399d09c0781f3e9d097d9fd}\label{prototypes_8h_a3c5379fbf399d09c0781f3e9d097d9fd} 
 \index{prototypes.h@{prototypes.h}!PrintRoots@{PrintRoots}}
 \index{PrintRoots@{PrintRoots}!prototypes.h@{prototypes.h}}
 \doxysubsubsection{\texorpdfstring{PrintRoots()}{PrintRoots()}}
@@ -111,6 +94,11 @@ After working x1 consists less root, x2 bigger root \Hypertarget{prototypes_8h_a
 \doxysubsubsection{\texorpdfstring{TestALL()}{TestALL()}}
 {\footnotesize\ttfamily int Test\+ALL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Starts all tests of solver
+
+\begin{DoxyReturn}{Returns}
+quantity of completed tests 
+\end{DoxyReturn}
 \Hypertarget{prototypes_8h_ae24b55ce52a3e44ced9d5a20205c6b25}\label{prototypes_8h_ae24b55ce52a3e44ced9d5a20205c6b25} 
 \index{prototypes.h@{prototypes.h}!TestOne@{TestOne}}
 \index{TestOne@{TestOne}!prototypes.h@{prototypes.h}}

@@ -2,12 +2,15 @@
 \hypertarget{waste_8cpp}{}\label{waste_8cpp}\index{waste.cpp@{waste.cpp}}
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \"{}prototypes.\+h\"{}}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{waste_8cpp_abfbde71664b7760e6d5e294274efd22c}{get\+\_\+num}} ()
-\item 
 void \mbox{\hyperlink{waste_8cpp_afe7419e1087f293619a88f1ce33c4589}{get\+\_\+coeffs}} (char data\mbox{[}$\,$\mbox{]}, double \texorpdfstring{$\ast$}{*}a, double \texorpdfstring{$\ast$}{*}b, double \texorpdfstring{$\ast$}{*}c)
+\item 
+void \mbox{\hyperlink{waste_8cpp_a8266c73dfcd65019dae3e05058ec9da6}{Modded\+Print}} (std\+::string text, int color)
 \end{DoxyCompactItemize}
 
 
@@ -18,9 +21,18 @@ void \mbox{\hyperlink{waste_8cpp_afe7419e1087f293619a88f1ce33c4589}{get\+\_\+coe
 \doxysubsubsection{\texorpdfstring{get\_coeffs()}{get\_coeffs()}}
 {\footnotesize\ttfamily void get\+\_\+coeffs (\begin{DoxyParamCaption}\item[{char}]{data\mbox{[}$\,$\mbox{]},  }\item[{double \texorpdfstring{$\ast$}{*}}]{a,  }\item[{double \texorpdfstring{$\ast$}{*}}]{b,  }\item[{double \texorpdfstring{$\ast$}{*}}]{c }\end{DoxyParamCaption})}
 
-\Hypertarget{waste_8cpp_abfbde71664b7760e6d5e294274efd22c}\label{waste_8cpp_abfbde71664b7760e6d5e294274efd22c} 
-\index{waste.cpp@{waste.cpp}!get\_num@{get\_num}}
-\index{get\_num@{get\_num}!waste.cpp@{waste.cpp}}
-\doxysubsubsection{\texorpdfstring{get\_num()}{get\_num()}}
-{\footnotesize\ttfamily int get\+\_\+num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\Hypertarget{waste_8cpp_a8266c73dfcd65019dae3e05058ec9da6}\label{waste_8cpp_a8266c73dfcd65019dae3e05058ec9da6} 
+\index{waste.cpp@{waste.cpp}!ModdedPrint@{ModdedPrint}}
+\index{ModdedPrint@{ModdedPrint}!waste.cpp@{waste.cpp}}
+\doxysubsubsection{\texorpdfstring{ModdedPrint()}{ModdedPrint()}}
+{\footnotesize\ttfamily void Modded\+Print (\begin{DoxyParamCaption}\item[{std\+::string}]{text,  }\item[{int}]{color }\end{DoxyParamCaption})}
 
+Print colored text
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Printable text \\
+\hline
+{\em color} & Color of text \\
+\hline
+\end{DoxyParams}
